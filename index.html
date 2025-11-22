@@ -1,0 +1,343 @@
+<!DOCTYPE html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Portofolio - Muhamad Agus Salim</title>
+
+    <link href="dist/style.css" rel="stylesheet" />
+
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet" />
+  </head>
+
+  <body class="bg-white text-gray-800 dark:bg-gray-900 dark:text-gray-100 transition-colors duration-300">
+    <header class="sticky top-0 z-50 bg-white/90 dark:bg-gray-900/90 backdrop-blur-sm shadow-md">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="flex justify-between items-center h-16">
+          <a href="#home" class="text-2xl font-extrabold text-indigo-600"> M.A.S. </a>
+
+          <nav class="hidden md:flex space-x-8">
+            <a href="#home" class="nav-link">Home</a>
+            <a href="#about" class="nav-link">Tentang Saya</a>
+            <a href="#skills" class="nav-link">Keahlian</a>
+            <a href="#projects" class="nav-link">Proyek</a>
+            <a href="#contact" class="nav-link">Kontak</a>
+          </nav>
+
+          <div class="flex items-center space-x-3">
+            <button id="theme-toggle" class="p-2 rounded-full hover:bg-gray-100 dark:hover:bg-gray-700 transition">
+              <i class="fas fa-moon text-xl" id="theme-toggle-icon"></i>
+            </button>
+            <button id="mobile-menu-button" class="md:hidden p-2">
+              <i class="fas fa-bars text-xl"></i>
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <div id="mobile-menu" class="hidden md:hidden bg-white dark:bg-gray-900 shadow-lg pb-2">
+        <div class="px-2 pt-2 pb-3 space-y-1 sm:px-3">
+          <a href="#home" class="mobile-nav-link">Home</a>
+          <a href="#about" class="mobile-nav-link">Tentang Saya</a>
+          <a href="#skills" class="mobile-nav-link">Keahlian</a>
+          <a href="#projects" class="mobile-nav-link">Proyek</a>
+          <a href="#contact" class="mobile-nav-link">Kontak</a>
+        </div>
+      </div>
+    </header>
+
+    <main>
+      <section id="home" class="min-h-screen flex items-center justify-center text-center p-8 bg-gray-50 dark:bg-gray-900">
+        <div class="max-w-4xl mx-auto">
+          <img src="assets/saya.png" alt="Avatar Muhamad Agus Salim" class="w-56 h-56 rounded-full mx-auto mb-6 object-cover border-4 border-indigo-600 transform transition duration-500 hover:scale-105" />
+          <h1 class="text-5xl md:text-7xl font-extrabold mb-4 text-gray-900 dark:text-white">Hallo, saya <span class="text-indigo-600">Muhamad Agus Salim</span></h1>
+          <p class="text-xl md:text-2xl mb-8 text-gray-600 dark:text-gray-300">Mahasiswa Sistem dan Teknologi Informasi ITB Semarang, menguasai Web Development dan Data Analysis.</p>
+          <div class="space-x-4">
+            <a href="#projects" class="btn-primary">Lihat Proyek Saya</a>
+            <a href="assets/Muhamad-Agus-Salim-cv.pdf" download class="btn-secondary" target="_blank">Unduh CV</a>
+          </div>
+        </div>
+      </section>
+
+      <section id="about" class="animated-section py-20 p-8 bg-white dark:bg-gray-800">
+        <div class="max-w-6xl mx-auto">
+          <h2 class="section-title">Tentang Saya</h2>
+          <div class="md:flex md:space-x-12 items-center">
+            <div class="md:w-1/3 mb-6 md:mb-0">
+              <div class="h-64 bg-gray-200 dark:bg-gray-700 rounded-lg flex items-center justify-center overflow-hidden">
+                <img src="assets/tentang-saya.png" alt="Ilustrasi Kerja" class="object-cover w-full h-full" />
+              </div>
+            </div>
+
+            <div class="md:w-2/3">
+              <p class="text-xl font-semibold mb-4 text-gray-900 dark:text-white border-l-4 border-indigo-600 pl-3">"Saya bukan hanya developer, saya adalah pemecah masalah yang melihat data dan kode sebagai alat untuk inovasi."</p>
+              <p class="text-lg leading-relaxed mb-4">
+                Saya Muhamad Agus Salim, mahasiswa Sistem dan Teknologi Informasi di ITB Semarang. Perjalanan saya berfokus pada dua pilar utama dunia digital: menciptakan produk fungsional (Web Development) dan menggali wawasan mendalam
+                (Data Analysis).
+              </p>
+              <p class="text-lg leading-relaxed mb-4">
+                Keahlian saya membentang dari membangun sistem <i>back-end</i> yang kokoh menggunakan PHP dan Laravel hingga menata visualisasi data yang kompleks menggunakan Python. Saya percaya bahwa developer terbaik adalah mereka yang
+                tidak hanya bisa menulis kode, tetapi juga mampu menginterpretasikan hasil untuk menghasilkan keputusan yang lebih cerdas.
+              </p>
+              <a href="#contact" class="inline-block mt-6 text-indigo-600 hover:text-indigo-700 font-semibold transition"> Mari Diskusikan Ide Proyek Anda &rarr; </a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="skills" class="animated-section py-20 p-8 bg-gray-50 dark:bg-gray-900">
+        <div class="max-w-6xl mx-auto">
+          <h2 class="section-title">Keahlian</h2>
+          <div class="grid grid-cols-2 md:grid-cols-4 gap-8">
+            <div class="skill-card skill-item-animation">
+              <i class="fab fa-laravel text-4xl text-red-600 mb-2"></i>
+              <h3 class="font-semibold text-lg">Laravel (PHP)</h3>
+              <p class="text-sm text-gray-600 dark:text-gray-400">Back-end Framework</p>
+            </div>
+            <div class="skill-card skill-item-animation">
+              <i class="fab fa-js text-4xl text-yellow-500 mb-2"></i>
+              <h3 class="font-semibold text-lg">JavaScript</h3>
+              <p class="text-sm text-gray-600 dark:text-gray-400">Interaktivitas Frontend</p>
+            </div>
+            <div class="skill-card skill-item-animation">
+              <i class="fab fa-python text-4xl text-blue-700 mb-2"></i>
+              <h3 class="font-semibold text-lg">Python</h3>
+              <p class="text-sm text-gray-600 dark:text-gray-400">Data & Machine Learning</p>
+            </div>
+            <div class="skill-card skill-item-animation">
+              <i class="fab fa-html5 text-4xl text-orange-500 mb-2"></i>
+              <h3 class="font-semibold text-lg">HTML & Tailwind</h3>
+              <p class="text-sm text-gray-600 dark:text-gray-400">Struktur & Styling Responsif</p>
+            </div>
+          </div>
+
+          <div class="mt-12 skill-item-animation">
+            <h3 class="text-2xl font-semibold mb-4 border-b pb-2 border-indigo-600/30">Alat, Tools & Lainnya</h3>
+            <div class="flex flex-wrap gap-3">
+              <span class="skill-badge">Pengembang Web</span>
+              <span class="skill-badge">Data Analyst</span>
+              <span class="skill-badge">GitHub</span>
+              <span class="skill-badge">MySQL</span>
+              <span class="skill-badge">PHP</span>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="projects" class="animated-section py-20 p-8 bg-white dark:bg-gray-800">
+        <div class="max-w-6xl mx-auto">
+          <h2 class="section-title">Proyek</h2>
+
+          <div class="grid md:grid-cols-2 gap-8">
+            <div class="project-card">
+              <div class="h-48 bg-gray-200 dark:bg-gray-700 rounded-t-lg flex items-center justify-center">
+                <span class="text-gray-500"><img src="assets/admin-panel.png" alt="admin-panel" height="70%" /></span>
+              </div>
+              <div class="p-6">
+                <h3 class="text-xl font-bold mb-2">Admin Panel (CRUD System)</h3>
+                <p class="text-gray-600 dark:text-gray-400 mb-4">Sistem manajemen konten dan pengguna yang dibangun dengan arsitektur MVC, cocok untuk backend aplikasi berskala kecil.</p>
+                <div class="flex flex-wrap gap-2 mb-4">
+                  <span class="tag-tech bg-red-100 text-red-800 dark:bg-red-900 dark:text-red-200">Laravel</span>
+                  <span class="tag-tech bg-yellow-100 text-yellow-800 dark:bg-yellow-900 dark:text-yellow-200">PHP</span>
+                  <span class="tag-tech">MySQL</span>
+                </div>
+                <div class="flex justify-between">
+                  <a href="#" class="text-indigo-600 hover:text-indigo-700 font-semibold transition">Live Demo</a>
+                  <a href="https://github.com/AgusSalim-Muh/admin-starter.git" target="_blank" class="text-gray-600 dark:text-gray-400 hover:text-gray-800 dark:hover:text-gray-200 transition">GitHub &rarr;</a>
+                </div>
+              </div>
+            </div>
+
+            <div class="project-card">
+              <div class="h-48 bg-gray-200 dark:bg-gray-700 rounded-t-lg flex items-center justify-center">
+                <span class="text-gray-500"><img src="assets/Akurasi_Model.png" alt="visualisasi data Analysis" /></span>
+              </div>
+              <div class="p-6">
+                <h3 class="text-xl font-bold mb-2">Analisa Kecanduan Medsos (ML)</h3>
+                <p class="text-gray-600 dark:text-gray-400 mb-4">Penerapan Machine Learning untuk memprediksi dan menganalisis tingkat kecanduan media sosial pada sampel siswa (Proyek Studi Kasus).</p>
+                <div class="flex flex-wrap gap-2 mb-4">
+                  <span class="tag-tech bg-blue-100 text-blue-800 dark:bg-blue-900 dark:text-blue-200">Python</span>
+                  <span class="tag-tech bg-green-100 text-green-800 dark:bg-green-900 dark:text-green-200">Machine Learning</span>
+                  <span class="tag-tech">Data Analysis</span>
+                </div>
+                <div class="flex justify-between">
+                  <a href="#" class="text-indigo-600 hover:text-indigo-700 font-semibold transition">Lihat Laporan</a>
+                  <a href="https://github.com/AgusSalim-Muh/Sosmed_Addiction.git" target="_blank" class="text-gray-600 dark:text-gray-400 hover:text-gray-800 dark:hover:text-gray-200 transition">GitHub &rarr;</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="contact" class="animated-section py-20 p-8 bg-gray-50 dark:bg-gray-900">
+        <div class="max-w-xl mx-auto text-center">
+          <h2 class="section-title">Kontak</h2>
+          <p class="text-lg mb-8 text-gray-600 dark:text-gray-300">🤝 Mari Berkolaborasi: Saatnya Mewujudkan Ide.</p>
+
+          <div class="flex justify-center space-x-6 mb-10">
+            <a href="https://www.linkedin.com/in/muhamad-agus-salim-335641337/" target="_blank" class="text-gray-700 dark:text-gray-300 hover:text-indigo-600 dark:hover:text-indigo-400 transition transform hover:scale-110"
+              ><i class="fab fa-linkedin text-3xl"></i
+            ></a>
+            <a href="https://www.instagram.com/kula_agussss?igsh=MXJ6YjBnMWVqMzlmcg==" target="_blank" class="text-gray-700 dark:text-gray-300 hover:text-indigo-600 dark:hover:text-indigo-400 transition transform hover:scale-110"
+              ><i class="fab fa-instagram text-3xl"></i
+            ></a>
+            <a href="https://www.tiktok.com/@muh_agus2005?lang=id-ID" target="_blank" class="text-gray-700 dark:text-gray-300 hover:text-indigo-600 dark:hover:text-indigo-400 transition transform hover:scale-110"
+              ><i class="fab fa-tiktok text-3xl"></i
+            ></a>
+            <a href="https://wa.me/082314726046" target="_blank" class="text-gray-700 dark:text-gray-300 hover:text-indigo-600 dark:hover:text-indigo-400 transition transform hover:scale-110"><i class="fab fa-whatsapp text-3xl"></i></a>
+          </div>
+
+          <form name="contact" method="POST" data-netlify="true" class="space-y-6">
+            <div>
+              <input type="text" placeholder="Nama Lengkap" required class="form-input" name="name" aria-label="Nama Lengkap" />
+            </div>
+
+            <div>
+              <input type="email" placeholder="Alamat Email" required class="form-input" name="email" aria-label="Alamat Email" />
+            </div>
+
+            <div>
+              <textarea rows="4" placeholder="Pesan Anda" required class="form-input" name="message" aria-label="Pesan Anda"></textarea>
+            </div>
+
+            <button type="submit" class="btn-primary w-full">Kirim Pesan</button>
+          </form>
+        </div>
+      </section>
+    </main>
+
+    <footer class="py-6 text-center text-sm bg-gray-100 dark:bg-gray-800 border-t border-gray-200 dark:border-gray-700">
+      <p>&copy; 2025 Muhamad Agus Salim.</p>
+    </footer>
+
+    <script>
+      // ===========================================
+      // 1. VARIABEL GLOBAL DAN SETUP
+      // ===========================================
+      const htmlElement = document.documentElement;
+
+      // Elemen Navbar & Menu Mobile
+      const toggleButton = document.getElementById("theme-toggle");
+      const toggleIcon = document.getElementById("theme-toggle-icon");
+      const mobileMenuButton = document.getElementById("mobile-menu-button");
+      const mobileMenu = document.getElementById("mobile-menu");
+
+      // Elemen untuk Logic Link Aktif & Animasi
+      const sections = document.querySelectorAll("main section");
+      const navLinks = document.querySelectorAll(".nav-link");
+      const mobileLinks = document.querySelectorAll(".mobile-nav-link");
+      const allLinks = [...navLinks, ...mobileLinks];
+      const skillCards = document.querySelectorAll(".skill-item-animation");
+
+      // ===========================================
+      // 2. DARK MODE LOGIC
+      // ===========================================
+      function updateTheme(isDark) {
+        if (isDark) {
+          htmlElement.classList.add("dark");
+          toggleIcon.classList.remove("fa-moon");
+          toggleIcon.classList.add("fa-sun");
+        } else {
+          htmlElement.classList.remove("dark");
+          toggleIcon.classList.remove("fa-sun");
+          toggleIcon.classList.add("fa-moon");
+        }
+      }
+
+      const prefersDark = window.matchMedia("(prefers-color-scheme: dark)").matches;
+      let isDarkMode = localStorage.getItem("theme") === "dark" || (!("theme" in localStorage) && prefersDark);
+      updateTheme(isDarkMode);
+
+      toggleButton.addEventListener("click", () => {
+        isDarkMode = !isDarkMode;
+        updateTheme(isDarkMode);
+        localStorage.setItem("theme", isDarkMode ? "dark" : "light");
+      });
+
+      // ===========================================
+      // 3. MOBILE MENU LOGIC
+      // ===========================================
+      if (mobileMenuButton) {
+        mobileMenuButton.addEventListener("click", () => {
+          mobileMenu.classList.toggle("hidden");
+        });
+      }
+
+      // Menutup menu mobile saat link diklik
+      allLinks.forEach((link) => {
+        link.addEventListener("click", () => {
+          if (mobileMenu) {
+            mobileMenu.classList.add("hidden");
+          }
+        });
+      });
+
+      // ===========================================
+      // 4. LINK AKTIF & ANIMASI SCROLL IN (Intersection Observer)
+      // ===========================================
+
+      // Observer Options
+      const observerOptions = {
+        root: null,
+        rootMargin: "0px",
+        threshold: 0.5,
+      };
+      const skillObserverOptions = {
+        root: null,
+        rootMargin: "0px",
+        threshold: 0.2,
+      };
+
+      // Observer untuk Section Utama (Link Aktif & Animasi Section)
+      const sectionObserver = new IntersectionObserver((entries) => {
+        entries.forEach((entry) => {
+          const sectionId = entry.target.id;
+
+          if (entry.isIntersecting) {
+            // Logic Link Aktif
+            allLinks.forEach((link) => link.classList.remove("active"));
+            allLinks.forEach((link) => {
+              if (link.getAttribute("href") === `#${sectionId}`) {
+                link.classList.add("active");
+              }
+            });
+
+            // Logic Animasi Section
+            entry.target.classList.add("is-visible");
+          }
+        });
+      }, observerOptions);
+
+      sections.forEach((section) => {
+        sectionObserver.observe(section);
+      });
+
+      // Observer untuk Animasi Skill Card (Muncul Berurutan)
+      const skillObserver = new IntersectionObserver((entries, observer) => {
+        entries.forEach((entry) => {
+          if (entry.isIntersecting) {
+            const skillElement = entry.target;
+            const index = Array.from(skillCards).indexOf(skillElement);
+
+            skillElement.style.transitionDelay = `${index * 100}ms`;
+
+            skillElement.classList.add("is-visible");
+            observer.unobserve(skillElement);
+          }
+        });
+      }, skillObserverOptions);
+
+      skillCards.forEach((card) => {
+        skillObserver.observe(card);
+      });
+
+      // ===========================================
+      // 5. INITIAL SETUP
+      // ===========================================
+      document.addEventListener("DOMContentLoaded", () => {
+        document.querySelector('.nav-link[href="#home"]').classList.add("active");
+      });
+    </script>
+  </body>
+</html>

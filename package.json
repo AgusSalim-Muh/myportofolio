@@ -1,0 +1,19 @@
+{
+  "name": "myportofolio",
+  "version": "1.0.0",
+  "description": "Portofolio Muhamad Agus Salim",
+  "main": "index.js",
+  "scripts": {
+    "start": "npx tailwindcss -i ./src/input.css -o ./dist/style.css --watch",
+    "build": "npx tailwindcss -i ./src/input.css -o ./dist/style.css --minify"
+  },
+  "keywords": [
+    "tailwind",
+    "portfolio"
+  ],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "tailwindcss": "^3.4.18"
+  }
+}
